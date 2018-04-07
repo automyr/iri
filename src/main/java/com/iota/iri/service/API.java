@@ -152,9 +152,9 @@ public class API {
     }
 
     private void readPreviousEpochsSpentAddresses() {
-        if (!SignedFiles.isFileSignatureValid("/previousEpochsSpentAddresses.txt", "/previousEpochsSpentAddresses.sig",
-                Snapshot.SNAPSHOT_PUBKEY, Snapshot.SNAPSHOT_PUBKEY_DEPTH, Snapshot.SPENT_ADDRESSES_INDEX)) {
-            throw new RuntimeException("Failed to load previousEpochsSpentAddresses - signature failed.");
+        //if (!SignedFiles.isFileSignatureValid("/previousEpochsSpentAddresses.txt", "/previousEpochsSpentAddresses.sig",
+        //        Snapshot.SNAPSHOT_PUBKEY, Snapshot.SNAPSHOT_PUBKEY_DEPTH, Snapshot.SPENT_ADDRESSES_INDEX)) {
+        //    throw new RuntimeException("Failed to load previousEpochsSpentAddresses - signature failed.");
         }
 
         InputStream in = Snapshot.class.getResourceAsStream("/previousEpochsSpentAddresses.txt");
